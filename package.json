@@ -36,6 +36,7 @@
     "install": "^0.8.1",
     "npm": "^3.10.7",
     "webpack": "^1.12.12",
+    "webpack-cli": "^3.2.1",
     "webpack-node-externals": "^1.4.3"
   }
 }

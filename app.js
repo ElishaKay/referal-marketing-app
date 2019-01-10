@@ -12,10 +12,17 @@ var connection = mysql.createConnection({
     host: adminConfig.mysql.host,
     user: adminConfig.mysql.username,
     password: adminConfig.mysql.password,
-    database: 'schemeBeam'
+    database: process.env.DATABASE
 });
 
-connection.connect();
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+
+  console.log('connected as id ' + connection.threadId);
+});
 
 
 //route configuration

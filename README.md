@@ -31,6 +31,31 @@ The more users they refer, the higher they move up in the queue, and the more fr
 8. Ready to deploy, run app.js
 
 
+<h3>Routes / API's</h3>
+
+You're verified:
+http://localhost/#/verify/c5cdaa9460eff1e60392b015d8abb280
+
+"Your Rank is #3" + Social Share Buttons:
+http://localhost/#/stats/9cfdd49ee17179ffe840739c388e2e97
+
+
+
+<h3>Admin Routes</h3>
+
+http://localhost/#/login
+
+
+<h3>Your .env file</h3>
+
+export SEND_GRID_KEY=xyz
+export DATABASE=xyz
+export HOST=xyz
+export PASSWORD=xyz
+export USER=xyz
+export SBADMIN=xyz
+export SBPASSWORD=xyz
+
 ## License
 
 The code, documentation and configuration are released under
