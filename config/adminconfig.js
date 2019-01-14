@@ -1,4 +1,4 @@
-//If you make any changes to schemeBeam, make sure you NEVER reference this config file on the front end of your code.
+//If  you make any changes to schemeBeam, make sure you NEVER reference this config file on the front end of your code.
 
 module.exports = {
   //Port on which to deploy app.js
