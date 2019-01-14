@@ -166,7 +166,7 @@ var ensureAuthenticated = require('../authentication/auth.js')(app);
     //gets full list of emails entered
     app.get('/api/v1/data/', ensureAuthenticated, function(req, res) {
         connection.query(
-            'SELECT emailaddress FROM emails WHERE `verified`=\'true\' ORDER BY referrals DESC, datetime ASC', 
+            'SELECT * FROM emails ORDER BY referrals DESC, datetime ASC', 
             function(err, rows, fields){   
                 if(err) throw err;
                 res.json(rows);
